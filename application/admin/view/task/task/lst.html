@@ -80,7 +80,7 @@
                             <td>暂未修改</td>
                             {/if}
                             <td>{$task->getAdmin($task->uid)}</td>
-                            <td><a href="{:url('task.task/edit', ['id'=>$task.id])}"><button class="layui-btn">编辑</button></a><input type="button" class="layui-btn delete" style="margin-left: 20px" onclick="del({$task.id})" value="删除"><input type="button" class="layui-btn layui-btn-radius layui-btn-warm" style="margin-left: 50px;margin-top: 20px" onclick="recommend({$task.id})" value="推荐"></td>
+                            <td><a href="{:url('task.task/edit', ['id'=>$task.id])}"><button class="layui-btn">编辑</button></a><input type="button" class="layui-btn delete" style="margin-left: 20px" onclick="del({$task.id})" value="删除"><input type="button" class="layui-btn layui-btn-radius layui-btn-warm" style="margin-left: 50px;" onclick="recommend({$task.id})" value="推荐"></td>
                         </tr>
                         {/foreach}
                     </tbody>
